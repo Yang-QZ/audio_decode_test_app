@@ -1,0 +1,31 @@
+{
+  "recordCount": 1,
+  "clock": "monotonic",
+  "metrics": {
+    "queueDelayNs": {
+      "count": 1,
+      "minMs": 1.0,
+      "meanMs": 1.0,
+      "p95Ms": 1.0,
+      "p99Ms": 1.0,
+      "maxMs": 1.0
+    },
+    "decodeCostNs": {
+      "count": 1,
+      "minMs": 2.0,
+      "meanMs": 2.0,
+      "p95Ms": 2.0,
+      "p99Ms": 2.0,
+      "maxMs": 2.0
+    },
+    "callbackLagNs": {
+      "count": 1,
+      "minMs": 1.0,
+      "meanMs": 1.0,
+      "p95Ms": 1.0,
+      "p99Ms": 1.0,
+      "maxMs": 1.0
+    }
+  },
+  "warnings": []
+}

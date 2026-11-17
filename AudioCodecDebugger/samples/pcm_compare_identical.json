@@ -1,0 +1,18 @@
+{
+  "sampleRate": 48000,
+  "channels": 2,
+  "referenceFramesPerChannel": 240000,
+  "candidateFramesPerChannel": 240000,
+  "comparedFramesPerChannel": 240000,
+  "offsetA": 0,
+  "offsetB": 0,
+  "detectedLag": 0,
+  "differentSamples": 0,
+  "differentSampleRatio": 0.0,
+  "meanAbsoluteError": 0.0,
+  "rmsError": 0.0,
+  "peakAbsoluteError": 0,
+  "snrDb": null,
+  "bitExactComparedRegion": true,
+  "note": "Lossy AAC round trips are not expected to be bit-exact; verify priming/padding separately."
+}

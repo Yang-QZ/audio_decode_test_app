@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AudioDecodeTest</string>
+
+    <!-- 底部导航 -->
+    <string name="nav_test">测试</string>
+    <string name="nav_files">文件</string>
+    <string name="nav_codecs">编解码器</string>
+    <string name="nav_about">关于</string>
+
+    <!-- 首页 -->
+    <string name="home_title">支持的音频格式</string>
+    <string name="home_subtitle">以下为占位清单，后续接入 MediaExtractor / MediaCodec 后进行实际探测与解码测试。</string>
+    <string name="badge_encode">可编码</string>
+    <string name="badge_decode">仅解码</string>
+
+    <!-- 文件页 -->
+    <string name="files_empty_title">暂无音频文件</string>
+    <string name="files_empty_desc">文件浏览与选择功能将在后续版本接入。</string>
+
+    <!-- 编解码器页 -->
+    <string name="codecs_title">设备编解码器</string>
+    <string name="codecs_subtitle">此页面将使用 MediaCodecList 枚举设备支持的音频编解码器，当前为示例占位数据。</string>
+
+    <!-- 关于页 -->
+    <string name="about_intro">用于学习 Android 音频解码的测试应用，目标是支持 AAC / MP3 / FLAC / Opus / Vorbis / ALAC / AC-3 等多种编码格式音频文件的解码与验证。</string>
+    <string name="about_version">版本 0.1.0（界面框架阶段）</string>
+    <string name="about_tech_title">技术栈</string>
+    <string name="about_tech">Kotlin · Material 3 · AndroidX\n后续接入：MediaExtractor / MediaCodec /（可选）FFmpeg</string>
+    <string name="about_ref_title">开源播放器参考</string>
+    <string name="about_ref">Media3 (ExoPlayer) · VLC/libVLC · FFmpeg\n详见 docs/开源播放器调研.md</string>
+    <string name="about_note">当前阶段仅搭建界面框架，尚未接入音频文件选择与播放。</string>
+</resources>

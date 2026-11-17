@@ -33,3 +33,16 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Patch generation temp output
+.patchgen/
+
+# OS
+.DS_Store
+Thumbs.db

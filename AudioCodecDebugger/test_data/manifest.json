@@ -1,0 +1,41 @@
+{
+  "pcm": {
+    "path": "sine_48k_stereo_s16le.pcm",
+    "sampleRate": 48000,
+    "channels": 2,
+    "format": "s16le",
+    "framesPerChannel": 240000
+  },
+  "wav": {
+    "path": "sine.wav",
+    "codec": "pcm_s16le",
+    "sampleRate": 48000,
+    "channels": 2,
+    "framesPerChannel": 240000,
+    "decodeVerified": true
+  },
+  "parserFixture": {
+    "path": "parser_only_5_frames.adts",
+    "frames": 5,
+    "decodable": false,
+    "warning": "Synthetic payload is for ADTS header tests only, not AAC decoding."
+  },
+  "decodableAac": {
+    "encoder": "PyAV 19.0.2 / FFmpeg native AAC",
+    "profile": "LC",
+    "sampleRate": 48000,
+    "channels": 2,
+    "targetBitRate": 128000,
+    "decodeVerified": true,
+    "adts": {
+      "path": "sine.aac",
+      "bytes": 81512
+    },
+    "m4a": {
+      "path": "sine.m4a",
+      "bytes": 81610
+    }
+  },
+  "ffmpegGenerated": false,
+  "pyAvGenerated": true
+}

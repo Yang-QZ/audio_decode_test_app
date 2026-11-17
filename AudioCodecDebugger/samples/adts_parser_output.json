@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "frames": [
+    {
+      "index": 0,
+      "offset": 0,
+      "frameLength": 87,
+      "payloadLength": 80,
+      "profile": 2,
+      "sampleRate": 48000,
+      "channelConfiguration": 2,
+      "rawDataBlocks": 1,
+      "crcPresent": false,
+      "durationUs": 21333.333333333332
+    },
+    {
+      "index": 1,
+      "offset": 87,
+      "frameLength": 98,
+      "payloadLength": 91,
+      "profile": 2,
+      "sampleRate": 48000,
+      "channelConfiguration": 2,
+      "rawDataBlocks": 1,
+      "crcPresent": false,
+      "durationUs": 21333.333333333332
+    },
+    {
+      "index": 2,
+      "offset": 185,
+      "frameLength": 109,
+      "payloadLength": 102,
+      "profile": 2,
+      "sampleRate": 48000,
+      "channelConfiguration": 2,
+      "rawDataBlocks": 1,
+      "crcPresent": false,
+      "durationUs": 21333.333333333332
+    },
+    {
+      "index": 3,
+      "offset": 294,
+      "frameLength": 120,
+      "payloadLength": 113,
+      "profile": 2,
+      "sampleRate": 48000,
+      "channelConfiguration": 2,
+      "rawDataBlocks": 1,
+      "crcPresent": false,
+      "durationUs": 21333.333333333332
+    },
+    {
+      "index": 4,
+      "offset": 414,
+      "frameLength": 131,
+      "payloadLength": 124,
+      "profile": 2,
+      "sampleRate": 48000,
+      "channelConfiguration": 2,
+      "rawDataBlocks": 1,
+      "crcPresent": false,
+      "durationUs": 21333.333333333332
+    }
+  ],
+  "issues": [],
+  "totalDurationUs": 106666.66666666666
+}
