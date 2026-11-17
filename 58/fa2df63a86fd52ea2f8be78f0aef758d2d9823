@@ -1,0 +1,21 @@
+.gitignore
+  s_863eafbd2e5956::t_4f9af792b92f02 43-45
+  s_863eafbd2e5956::t_e61b90102a3313 40-42
+  s_863eafbd2e5956::t_c70a75e0e09764 46-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "58fa2df63a86fd52ea2f8be78f0aef758d2d9823",
+  "prompts": {},
+  "sessions": {
+    "s_863eafbd2e5956": {
+      "agent_id": {
+        "tool": "codebuddy",
+        "id": "4f7a51402b4b48728816b07d45eee3be",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Yang-QZ <747159967@qq.com>"
+    }
+  }
+}
