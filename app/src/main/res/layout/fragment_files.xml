@@ -2,31 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    android:padding="32dp">
+    android:orientation="vertical"
+    android:padding="40dp">
 
     <ImageView
-        android:layout_width="72dp"
-        android:layout_height="72dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/files_empty_title"
         android:src="@drawable/ic_nav_files"
-        android:tint="@color/on_surface_variant"
-        android:contentDescription="@string/files_empty_title" />
+        android:tint="@color/on_surface_variant" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="@string/files_empty_title"
-        android:textAppearance="?attr/textAppearanceTitleMedium"
-        android:textColor="@color/on_background" />
+        android:textColor="@color/on_background"
+        android:textSize="@dimen/text_title_medium"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:gravity="center"
+        android:lineSpacingExtra="4dp"
         android:text="@string/files_empty_desc"
-        android:textAppearance="?attr/textAppearanceBodyMedium"
-        android:textColor="@color/on_surface_variant" />
+        android:textColor="@color/on_surface_variant"
+        android:textSize="@dimen/text_body" />
 </LinearLayout>

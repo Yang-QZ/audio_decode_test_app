@@ -14,5 +14,18 @@
         <item name="colorSurfaceVariant">@color/surface_variant</item>
         <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
         <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- 顶部标题栏字号 -->
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/text_title_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 底部导航文字字号 -->
+    <style name="BottomNavLabelStyle" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">@dimen/text_label</item>
     </style>
 </resources>

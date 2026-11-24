@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -11,6 +12,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/primary"
         app:title="@string/app_name"
+        app:titleTextAppearance="@style/ToolbarTitleStyle"
         app:titleTextColor="@color/on_primary" />
 
     <androidx.fragment.app.FragmentContainerView
@@ -23,6 +25,7 @@
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemTextAppearance="@style/BottomNavLabelStyle"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 </LinearLayout>

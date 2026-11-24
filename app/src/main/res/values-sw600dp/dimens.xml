@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 平板 / 车机等大屏设备：进一步放大字号与间距 -->
+    <dimen name="text_title_large">34sp</dimen>
+    <dimen name="text_title_medium">27sp</dimen>
+    <dimen name="text_title_small">24sp</dimen>
+    <dimen name="text_body">21sp</dimen>
+    <dimen name="text_body_small">19sp</dimen>
+    <dimen name="text_label">19sp</dimen>
+
+    <dimen name="screen_padding">28dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="card_padding">24dp</dimen>
+    <dimen name="section_spacing">28dp</dimen>
+</resources>
