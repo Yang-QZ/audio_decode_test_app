@@ -1,0 +1,43 @@
+app/src/main/res/layout/fragment_codecs.xml
+  s_863eafbd2e5956::t_0b4e5adacb3a04 6-8,16-18,24-25,27-28,35
+app/src/main/res/layout/item_playback_engine.xml
+  s_863eafbd2e5956::t_127c00d3a9346c 6,20,24-25,28-30,35,43-45,51-53,60,62-64
+app/src/main/res/layout/fragment_pcm_player.xml
+  s_863eafbd2e5956::t_e12830a12d0668 12,18-20,26,36,43-44,50-52,61,72,78-80,86-88,94-96,102-104,110-112,118-120,126-128,136,145-148,152,155,158-159,161,168,170,172-173,178-179,181-182
+app/src/main/res/layout/fragment_files.xml
+  s_863eafbd2e5956::t_5906567e21feba 6-7,10-12,14,19,21-23,28,30,32-33
+app/src/main/res/layout/fragment_about.xml
+  s_863eafbd2e5956::t_49916ac9e17bd3 11,17-19,24,26-27,32-33,35-36,41,43-45,50-51,53-54,59,61-63,68-69,71-72,77,79-80,82-83
+app/src/main/java/com/example/audiodecodetestapp/MainActivity.kt
+  s_863eafbd2e5956::t_7bf1ba664f6546 4,6-8,21-22,25-34
+app/src/main/res/layout/activity_main.xml
+  s_863eafbd2e5956::t_9ae62d8df96de1 4,15,28
+app/src/main/res/layout/fragment_home.xml
+  s_863eafbd2e5956::t_903ac5e9287fbe 6-8,16-18,24-25,27-28,35
+app/src/main/res/values/themes.xml
+  s_863eafbd2e5956::t_807ab84c7ffbc9 17-29
+app/src/main/res/values-sw600dp/dimens.xml
+  s_863eafbd2e5956::t_0c3b62892627db 1-15
+app/src/main/res/layout/item_codec_format.xml
+  s_863eafbd2e5956::t_d1e9ebb0c16068 6,19,32-34,40,42-45,47-48,55-57,63-66,72-75
+app/src/main/res/layout/fragment_format_detail.xml
+  s_863eafbd2e5956::t_ca995080b67158 6-8,15-17,23-25,31-34,39,41-43,48,50-51,58,66,69-70,73
+app/src/main/res/values/dimens.xml
+  s_863eafbd2e5956::t_2f22754ebb39e9 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "1dd737fa4f97614de6a1e6566dee7f6509d1797f",
+  "prompts": {},
+  "sessions": {
+    "s_863eafbd2e5956": {
+      "agent_id": {
+        "tool": "codebuddy",
+        "id": "4f7a51402b4b48728816b07d45eee3be",
+        "model": "deepseek-v4.1-flash"
+      },
+      "human_author": "Yang-QZ <747159967@qq.com>"
+    }
+  }
+}
