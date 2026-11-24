@@ -1,8 +1,56 @@
-# Android 多媒体音频编解码学习教程
+# Android 多媒体音频编解码学习
+
+本仓库包含两个**独立的** Android 工程：
+
+| 位置 | 工程 | 说明 |
+| --- | --- | --- |
+| **仓库根目录** | `AudioDecodeTestApp` | 多格式音频测试应用（界面框架阶段）。Android Studio **直接打开仓库根目录**即可识别本工程 |
+| `AudioCodecDebugger/android/` | `AudioCodecDebugger` | AAC 编解码专项实验工程。独立 Gradle 工程，需**单独打开该子目录** |
+
+> 注意：两个工程不能合并成一个 Gradle 工程（一个启用 AndroidX，一个禁用），所以分别独立构建。
+
+## 快速开始（根目录：AudioDecodeTestApp）
+
+### 环境
+
+- JDK 17+
+- Android SDK Platform 35、Android SDK Build Tools
+
+clone 后需指定 Android SDK 路径（任选其一）：
+
+1. 设置环境变量 `ANDROID_HOME`（或 `ANDROID_SDK_ROOT`）指向 SDK 目录；
+2. 在**仓库根目录**新建 `local.properties`，写入 `sdk.dir=<你的SDK路径>`（本机示例：`C:\Users\WTCL\AppData\Local\Android\Sdk`）。
+
+> `local.properties` 已被 `.gitignore` 排除，不会提交到仓库。
+
+### 构建
+
+```powershell
+# 在仓库根目录执行
+.\gradlew.bat assembleDebug
+adb install -r .\app\build\outputs\apk\debug\app-debug.apk
+```
+
+> `settings.gradle` 已配置阿里云 Maven 镜像，国内网络可直接解析 Google Maven 依赖；官方源保留作回退。
+
+### Android Studio
+
+用 Android Studio 打开**仓库根目录**（`decoding/` 或 clone 后的仓库根），会自动识别为 Gradle 工程。
+
+## AudioCodecDebugger（独立工程）
+
+位于 `AudioCodecDebugger/android/`，是独立的 Gradle 工程，需单独打开该目录，或命令行构建：
+
+```powershell
+cd AudioCodecDebugger/android
+.\gradlew.bat assembleDebug
+```
+
+该工程的素材准备、设备操作与故障说明见 [AudioCodecDebugger/android/README.md](AudioCodecDebugger/android/README.md)。
+
+## 学习教程
 
 基于 `Z:\work\DP8678GPU_GRP\android\system` 的 MTK8678 实际源码，主线为 **MediaExtractor → MediaCodec → CCodec → Codec2 → C2SoftAacDec → FDK-AAC → PCM**。
-
-## 阅读顺序
 
 1. [课程总览、源码索引与版本证据](docs/00_课程总览与源码索引.md)
 2. [第 1 周：AAC 基础与码流](docs/01_AAC_基础与码流.md)
@@ -18,24 +66,22 @@
 
 ## 可运行交付
 
+- 根目录 `AudioDecodeTestApp`：Kotlin + Material 3 的多格式音频测试界面框架。
 - `AudioCodecDebugger/android/`：完整 Android Java 工程，支持 AAC/M4A 解码、PCM 编码、组件枚举、基准与故障实验；含 Gradle Wrapper。
 - `AudioCodecDebugger/native/AacFrameParser/`：C++17 ADTS 帧解析器。
 - `AudioCodecDebugger/scripts/`：测试素材生成、Python ADTS 参考解析、PCM 对比、延迟统计。
 - `AudioCodecDebugger/tests/`：主机自动化测试。
 - `patches/`：不默认启用的 Native Trace/耗时注入补丁及撤销说明。
+- `docs/开源播放器调研.md`：开源播放器/解码库调研（Media3、VLC、FFmpeg）。
 - `TEST_REPORT.md`：实际执行、跳过和待设备验证的边界。
 
-## 快速开始
+## 主机工具快速开始
 
 ```powershell
 python -m unittest discover -s AudioCodecDebugger/tests -v
 python AudioCodecDebugger/scripts/generate_test_files.py --output AudioCodecDebugger/test_data
 python AudioCodecDebugger/scripts/adts_inspect.py AudioCodecDebugger/test_data/parser_only_5_frames.adts
-cd AudioCodecDebugger/android
-.\gradlew.bat assembleDebug
 ```
-
-最后一条需要 JDK 17 和 Android SDK 35。真实设备操作、输出样例与风险说明见 [Android README](AudioCodecDebugger/android/README.md)。
 
 ## 证据约定
 
