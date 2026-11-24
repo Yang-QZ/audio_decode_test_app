@@ -1,0 +1,71 @@
+app/src/main/res/layout/fragment_format_detail.xml
+  s_863eafbd2e5956::t_1c59f2ddeb8664 1-71
+app/src/main/java/com/example/audiodecodetestapp/model/CodecFormat.kt
+  s_863eafbd2e5956::t_a272da1e6a4f11 4,6-10,17-18,20-23,26-81,83-85
+app/src/main/java/com/example/audiodecodetestapp/audio/EnginePlayer.kt
+  s_863eafbd2e5956::t_2b582c327acab3 1-18
+app/src/main/res/layout/item_codec_format.xml
+  s_863eafbd2e5956::t_9e7815b00c3fe8 7-8,11,64-71
+app/src/main/java/com/example/audiodecodetestapp/ui/player/PcmPlayerFragment.kt
+  s_863eafbd2e5956::t_a474a4ffa4cb5e 1-172
+app/src/main/res/values/strings.xml
+  s_863eafbd2e5956::t_e4c2c64eef1a29 13,16-24,26-46,50,57-58,60,63
+  s_863eafbd2e5956::t_31758419b5809d 25
+app/src/main/java/com/example/audiodecodetestapp/audio/WavParser.kt
+  s_863eafbd2e5956::t_e7b774198432c5 1-121
+app/src/main/java/com/example/audiodecodetestapp/audio/AudioTrackEnginePlayer.kt
+  s_863eafbd2e5956::t_ae0986e35be2ff 1-104
+app/src/main/java/com/example/audiodecodetestapp/adapter/CodecFormatAdapter.kt
+  s_863eafbd2e5956::t_49edece2eefedc 12-13,21,40-51
+README.md
+  s_863eafbd2e5956::t_65f7686df719bb 7,12-39,46-47
+app/src/main/java/com/example/audiodecodetestapp/audio/EnginePlayerFactory.kt
+  s_863eafbd2e5956::t_d186809d0246df 1-14
+app/src/main/java/com/example/audiodecodetestapp/ui/detail/FormatDetailFragment.kt
+  s_863eafbd2e5956::t_4a7c4b3ef5cdc1 1-2,4-15,17-61,68-74,76-90
+  s_863eafbd2e5956::t_4cdc5728863b30 3,16,62-67,75
+app/src/main/cpp/aaudio_player.cpp
+  s_863eafbd2e5956::t_3525c3a8ca7664 1-146
+app/src/main/java/com/example/audiodecodetestapp/model/PlaybackEngine.kt
+  s_863eafbd2e5956::t_d5b7c59b1335fc 1-33
+app/src/main/java/com/example/audiodecodetestapp/adapter/PlaybackEngineAdapter.kt
+  s_863eafbd2e5956::t_32a50d8a5cc733 1-42
+app/src/main/cpp/CMakeLists.txt
+  s_863eafbd2e5956::t_d4fcd97b654e89 1-15
+app/src/main/java/com/example/audiodecodetestapp/audio/SoundPoolEnginePlayer.kt
+  s_863eafbd2e5956::t_aa1d3d59d13aa9 1-6,8-11,15-18,20-28,35-44,47-63,66-73
+  s_863eafbd2e5956::t_f00987eda368f3 7,12-14,19,29-34,45-46,64-65
+app/src/main/java/com/example/audiodecodetestapp/audio/MediaPlayerEnginePlayer.kt
+  s_863eafbd2e5956::t_d471cd296c5b9d 1-42
+app/src/main/java/com/example/audiodecodetestapp/audio/WavInfo.kt
+  s_863eafbd2e5956::t_c484d8d94bc2df 1-35
+app/build.gradle
+  s_863eafbd2e5956::t_d83ca57601ba0c 13-14
+  s_863eafbd2e5956::t_f35121afd51976 9,16-30,49-52
+app/src/main/java/com/example/audiodecodetestapp/audio/AAudioEnginePlayer.kt
+  s_863eafbd2e5956::t_8eb21c57b385ce 1-76
+app/src/main/res/layout/item_playback_engine.xml
+  s_863eafbd2e5956::t_d8d7f98cc7f6c0 1-63
+app/src/main/java/com/example/audiodecodetestapp/ui/home/HomeFragment.kt
+  s_863eafbd2e5956::t_8c3a17d402164c 13,28-34
+app/src/main/java/com/example/audiodecodetestapp/audio/Media3EnginePlayer.kt
+  s_863eafbd2e5956::t_59d4c3812afd9d 1-36
+app/src/main/res/layout/fragment_pcm_player.xml
+  s_863eafbd2e5956::t_66f0ab8b280e6b 1-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "a7815b1b9de39f6433cc3c7c5dbd872ef4851ea1",
+  "prompts": {},
+  "sessions": {
+    "s_863eafbd2e5956": {
+      "agent_id": {
+        "tool": "codebuddy",
+        "id": "4f7a51402b4b48728816b07d45eee3be",
+        "model": "deepseek-v4.1-flash"
+      },
+      "human_author": "Yang-QZ <747159967@qq.com>"
+    }
+  }
+}
