@@ -1,4 +1,5 @@
 plugins {
-    id 'com.android.application' version '8.7.3' apply false
+    // Android Studio 2024.1.1 (Koala) 最高支持 AGP 8.5，故使用 8.5.2
+    id 'com.android.application' version '8.5.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.9.24' apply false
 }
