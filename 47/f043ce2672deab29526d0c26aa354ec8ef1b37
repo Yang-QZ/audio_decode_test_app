@@ -1,0 +1,19 @@
+README.md
+  s_863eafbd2e5956::t_3d5524ae035399 1,3-34,36-53,69,75,78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "47f043ce2672deab29526d0c26aa354ec8ef1b37",
+  "prompts": {},
+  "sessions": {
+    "s_863eafbd2e5956": {
+      "agent_id": {
+        "tool": "codebuddy",
+        "id": "4f7a51402b4b48728816b07d45eee3be",
+        "model": "deepseek-v4.1-flash"
+      },
+      "human_author": "Yang-QZ <747159967@qq.com>"
+    }
+  }
+}
