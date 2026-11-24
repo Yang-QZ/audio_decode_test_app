@@ -1,0 +1,19 @@
+build.gradle
+  s_863eafbd2e5956::t_0a006c9535c216 2-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "524084643ae596cf13bab82f2c38a314de0c7d98",
+  "prompts": {},
+  "sessions": {
+    "s_863eafbd2e5956": {
+      "agent_id": {
+        "tool": "codebuddy",
+        "id": "4f7a51402b4b48728816b07d45eee3be",
+        "model": "deepseek-v4.1-flash"
+      },
+      "human_author": "Yang-QZ <747159967@qq.com>"
+    }
+  }
+}
