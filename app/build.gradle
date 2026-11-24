@@ -6,13 +6,28 @@ plugins {
 android {
     namespace 'com.example.audiodecodetestapp'
     compileSdk 35
+    ndkVersion '25.2.9519653'
 
     defaultConfig {
         applicationId 'com.example.audiodecodetestapp'
-        minSdk 24
+        // AAudio 需要 Android 8.0 (API 26)
+        minSdk 26
         targetSdk 35
-        versionCode 1
-        versionName '0.1.0'
+        versionCode 2
+        versionName '0.2.0'
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ''
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
     }
 
     compileOptions {
@@ -31,4 +46,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.fragment:fragment-ktx:1.8.5'
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    // Media3（ExoPlayer）
+    implementation 'androidx.media3:media3-exoplayer:1.4.1'
+    implementation 'androidx.media3:media3-common:1.4.1'
 }

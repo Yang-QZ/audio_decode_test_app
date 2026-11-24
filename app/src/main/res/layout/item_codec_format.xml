@@ -4,8 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="6dp"
+    android:clickable="true"
+    android:focusable="true"
     app:cardBackgroundColor="@color/surface"
     app:cardElevation="0dp"
+    app:rippleColor="@color/primary_container"
     app:strokeColor="@color/surface_variant"
     app:strokeWidth="1dp">
 
@@ -58,5 +61,13 @@
             android:layout_marginTop="4dp"
             android:textAppearance="?attr/textAppearanceBodySmall"
             android:textColor="@color/on_surface_variant" />
+
+        <TextView
+            android:id="@+id/format_engines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="@color/primary" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

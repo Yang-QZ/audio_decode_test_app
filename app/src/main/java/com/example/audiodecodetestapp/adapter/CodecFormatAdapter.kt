@@ -9,7 +9,8 @@ import com.example.audiodecodetestapp.R
 import com.example.audiodecodetestapp.model.CodecFormat
 
 class CodecFormatAdapter(
-    private val formats: List<CodecFormat>
+    private val formats: List<CodecFormat>,
+    private val onClick: (CodecFormat) -> Unit = {}
 ) : RecyclerView.Adapter<CodecFormatAdapter.Holder>() {
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
@@ -17,6 +18,7 @@ class CodecFormatAdapter(
         val meta: TextView = view.findViewById(R.id.format_meta)
         val desc: TextView = view.findViewById(R.id.format_desc)
         val badge: TextView = view.findViewById(R.id.format_badge)
+        val engines: TextView = view.findViewById(R.id.format_engines)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -35,6 +37,18 @@ class CodecFormatAdapter(
         } else {
             holder.itemView.context.getString(R.string.badge_decode)
         }
+        holder.badge.visibility = View.VISIBLE
+
+        holder.engines.text = if (format.playable) {
+            holder.itemView.context.getString(
+                R.string.format_engine_count,
+                format.engines.size
+            )
+        } else {
+            holder.itemView.context.getString(R.string.format_no_engine)
+        }
+
+        holder.itemView.setOnClickListener { onClick(format) }
     }
 
     override fun getItemCount(): Int = formats.size

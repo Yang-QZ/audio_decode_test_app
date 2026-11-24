@@ -4,10 +4,38 @@
 
 | 位置 | 工程 | 说明 |
 | --- | --- | --- |
-| **仓库根目录** | `AudioDecodeTestApp` | 多格式音频测试应用（界面框架阶段）。Android Studio **直接打开仓库根目录**即可识别本工程 |
+| **仓库根目录** | `AudioDecodeTestApp` | 多格式音频测试应用（播放接口框架 + WAV/PCM 播放）。Android Studio **直接打开仓库根目录**即可识别本工程 |
 | `AudioCodecDebugger/android/` | `AudioCodecDebugger` | AAC 编解码专项实验工程。独立 Gradle 工程，需**单独打开该子目录** |
 
 > 注意：两个工程不能合并成一个 Gradle 工程（一个启用 AndroidX，一个禁用），所以分别独立构建。
+
+## 功能说明（AudioDecodeTestApp）
+
+### 播放接口枚举（全部格式）
+
+首页点击任一格式卡片进入二级页，列出该格式在**默认配置下可用**的播放接口：
+
+| 格式 | AudioTrack | MediaPlayer | Media3 | SoundPool | AAudio |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| WAV / PCM | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MP3 / Vorbis | - | ✓ | ✓ | ✓ | - |
+| AAC-LC / FLAC / Opus / ALAC / AMR | - | ✓ | ✓ | - | - |
+| AC-3 / E-AC-3 | - | - | - | - | - |
+
+> AudioTrack / AAudio 只能直接播放 PCM，所以仅 WAV/PCM 可用；AC-3/E-AC-3 默认无接口，需要 Media3 FFmpeg 扩展。
+
+### WAV/PCM 实际播放（已实现）
+
+在 WAV/PCM 二级页选择任一接口进入播放页：
+
+1. `选择 WAV / PCM 文件`（SAF，无需存储权限）；
+2. 自动解析 RIFF/WAVE，显示**采样率、声道、位深、编码格式、时长、数据大小**；
+3. 点击播放，按所选接口实现：
+   - **AudioTrack**：解析后流式写入原始 PCM；
+   - **MediaPlayer**：系统播放器直接播放；
+   - **Media3 (ExoPlayer)**：官方媒体库；
+   - **SoundPool**：复制到缓存后加载（仅适合 ≤1 MB 短音频）；
+   - **AAudio**：JNI 调用 NDK 的 AAudio 低延迟流（仅 16 位 PCM）。
 
 ## 快速开始（根目录：AudioDecodeTestApp）
 
@@ -15,6 +43,8 @@
 
 - JDK 17+
 - Android SDK Platform 35、Android SDK Build Tools
+- **NDK 25.2.9519653、CMake 3.22.1**（AAudio 的 C++ 实现需要）
+- `minSdk 26`（AAudio 从 Android 8.0 开始提供）
 
 clone 后需指定 Android SDK 路径（任选其一）：
 

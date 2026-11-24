@@ -10,24 +10,55 @@
 
     <!-- 首页 -->
     <string name="home_title">支持的音频格式</string>
-    <string name="home_subtitle">以下为占位清单，后续接入 MediaExtractor / MediaCodec 后进行实际探测与解码测试。</string>
+    <string name="home_subtitle">点击格式卡片查看可用的播放接口；WAV/PCM 已实现五种接口的实际播放。</string>
     <string name="badge_encode">可编码</string>
     <string name="badge_decode">仅解码</string>
+    <string name="format_engine_count">%1$d 个可用接口</string>
+    <string name="format_no_engine">无可用接口</string>
+
+    <!-- 格式详情（二级页） -->
+    <string name="detail_engines_title">可用播放接口</string>
+    <string name="detail_engines_subtitle">仅列出默认配置下能播放该格式的接口</string>
+    <string name="detail_no_engine">该格式在默认配置下无法用这 5 种接口播放。\n需要 Media3 FFmpeg 扩展，或设备自带对应解码器。</string>
+    <string name="detail_action_enter">进入</string>
+    <string name="detail_action_pending">待实现</string>
+    <string name="detail_engine_pending">「%1$s」播放实现待后续版本</string>
+
+    <!-- PCM / WAV 播放 -->
+    <string name="pcm_engine_label">当前接口：%1$s</string>
+    <string name="pcm_file_placeholder">尚未选择文件</string>
+    <string name="pcm_select_file">选择 WAV / PCM 文件</string>
+    <string name="pcm_info_title">WAV 格式信息</string>
+    <string name="pcm_info_sample_rate">采样率</string>
+    <string name="pcm_info_channels">声道</string>
+    <string name="pcm_info_bits">位深</string>
+    <string name="pcm_info_format">编码格式</string>
+    <string name="pcm_info_duration">时长</string>
+    <string name="pcm_info_size">数据大小</string>
+    <string name="pcm_play">播放</string>
+    <string name="pcm_stop">停止</string>
+    <string name="pcm_status_idle">就绪</string>
+    <string name="pcm_status_playing">播放中</string>
+    <string name="pcm_status_stopped">已停止</string>
+    <string name="pcm_status_error">播放失败：%1$s</string>
+    <string name="pcm_hint">选择 WAV 文件后点击播放。五种接口实现方式不同，SoundPool 仅适合短音频，AAudio 需要 16 位 PCM。</string>
+    <string name="pcm_file_picked">已选择：%1$s</string>
+    <string name="pcm_file_invalid">无法解析 WAV 文件，请确认是标准 RIFF/WAVE 格式</string>
 
     <!-- 文件页 -->
     <string name="files_empty_title">暂无音频文件</string>
-    <string name="files_empty_desc">文件浏览与选择功能将在后续版本接入。</string>
+    <string name="files_empty_desc">WAV/PCM 播放请在「测试」页进入 WAV / PCM 格式后选择文件。</string>
 
     <!-- 编解码器页 -->
     <string name="codecs_title">设备编解码器</string>
     <string name="codecs_subtitle">此页面将使用 MediaCodecList 枚举设备支持的音频编解码器，当前为示例占位数据。</string>
 
     <!-- 关于页 -->
-    <string name="about_intro">用于学习 Android 音频解码的测试应用，目标是支持 AAC / MP3 / FLAC / Opus / Vorbis / ALAC / AC-3 等多种编码格式音频文件的解码与验证。</string>
-    <string name="about_version">版本 0.1.0（界面框架阶段）</string>
+    <string name="about_intro">用于学习 Android 音频解码的测试应用，支持查看各编码格式可用的播放接口，并已为 WAV/PCM 实现 AudioTrack、MediaPlayer、Media3、SoundPool、AAudio 五种播放方式。</string>
+    <string name="about_version">版本 0.2.0（播放接口框架 + WAV 播放）</string>
     <string name="about_tech_title">技术栈</string>
-    <string name="about_tech">Kotlin · Material 3 · AndroidX\n后续接入：MediaExtractor / MediaCodec /（可选）FFmpeg</string>
+    <string name="about_tech">Kotlin · Material 3 · AndroidX\n播放接口：AudioTrack / MediaPlayer / Media3 / SoundPool / AAudio(NDK)</string>
     <string name="about_ref_title">开源播放器参考</string>
     <string name="about_ref">Media3 (ExoPlayer) · VLC/libVLC · FFmpeg\n详见 docs/开源播放器调研.md</string>
-    <string name="about_note">当前阶段仅搭建界面框架，尚未接入音频文件选择与播放。</string>
+    <string name="about_note">当前已实现播放接口枚举与 WAV/PCM 播放；其他格式的播放实现与文件选择待后续版本。</string>
 </resources>
